@@ -142,9 +142,17 @@ span {
   visibility: hidden;
   pointer-events: none;
 }
-.visually-hidden {
-  display: none;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
+
 .flex-col-row-lg,
 .flex-col-row-md {
   display: flex;
@@ -423,6 +431,10 @@ body {
 }
 .extentions-header h2 {
   margin-block-end: 1rem;
+}
+.extentions-header p {
+  max-width: 50ch;
+  margin-inline: auto;
 }
 .extentions-cards.flex-col-row-md {
   gap: var(--Extentions-Cards-Gap);
