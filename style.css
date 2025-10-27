@@ -116,7 +116,7 @@ span {
   --Tab-List_mbe: 2.75rem;
   --Feature-Gap: 2rem;
   --Tab-Content_Text-Gap: 1rem;
-  --Shap-Hight: clamp(12.685rem, 4.1859rem + 36.2628vw, 22rem);
+  --Shap-Height: clamp(12.685rem, 4.1859rem + 36.2628vw, 22rem);
   --Shap-Width: clamp(36.0625rem, 11.9407rem + 102.9197vw, 62.5rem);
   --Extentions-Header_mbe: clamp(2.5rem, 1.1314rem + 5.8394vw, 4rem);
   --Extentions-Cards-Gap: 2.5rem;
@@ -307,9 +307,9 @@ body {
 .hero-img::after {
   content: "";
   width: calc(var(--Shap-Width) * 10);
-  height: var(--Shap-Hight);
+  height: var(--Shap-Height);
   background-color: var(--Blue-600);
-  border-radius: calc(var(--Shap-Hight) / 2);
+  border-radius: calc(var(--Shap-Height) / 2);
   position: absolute;
   bottom: calc(clamp(3rem, 0.0347rem + 12.6521vw, 6.25rem) * -1);
   left: clamp(2.375rem, -4.24rem + 28.2238vw, 9.625rem);
@@ -348,7 +348,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.tab-list li {
+.tab-list button {
   position: relative;
   width: 100%;
   font: var(--Preset-2-r);
@@ -359,13 +359,13 @@ body {
   opacity: 0.75;
   transition: color 0.3s;
 }
-.tab-list li:hover {
+.tab-list button:hover {
   color: var(--Red-400);
 }
-.tab-list li.active {
+.tab-list button.active {
   opacity: 1;
 }
-.tab-list li.active::after {
+.tab-list button.active::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -394,9 +394,9 @@ body {
   right: 15%;
   bottom: calc(clamp(2.1875rem, -0.5497rem + 11.6788vw, 5.625rem) * -1);
   width: calc(var(--Shap-Width) * 10);
-  height: var(--Shap-Hight);
+  height: var(--Shap-Height);
   background-color: var(--Blue-600);
-  border-radius: calc(var(--Shap-Hight) / 2);
+  border-radius: calc(var(--Shap-Height) / 2);
   z-index: 1;
 }
 
@@ -505,6 +505,8 @@ body {
 }
 .faq-item.active .arrow {
   transform: rotate(180deg);
+  filter: invert(49%) sepia(99%) saturate(2849%) hue-rotate(328deg)
+    brightness(101%) contrast(95%);
 }
 .faq-answer p {
   padding-block-end: 1rem;
@@ -641,7 +643,7 @@ body {
     --Feature-Gap: 4rem;
     --Tab-Content_Text-Gap: 1.5rem;
     --Shap-Width: 62.5rem;
-    --Shap-Hight: 22rem;
+    --Shap-Height: 22rem;
     --Extentions-Cards-Gap: 0.5rem;
     --Card-Img_mbe: 1rem;
     --Social-Link-Gap: 1.5rem;
@@ -665,7 +667,7 @@ body {
     justify-content: space-around;
     border-block-end: 1px solid var(--Blue-Line);
   }
-  .tab-list li {
+  .tab-list button {
     font: var(--Preset-5-r);
     letter-spacing: 0.03125rem;
     border-block-end: none;
