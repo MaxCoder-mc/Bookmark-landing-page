@@ -102,7 +102,7 @@ tabs.forEach((tab, idx) => {
 });
 
 // ensure panels reflect initial active class
-panels.forEach((p, i) => {
+panels.forEach((p) => {
   p.hidden = !p.classList.contains("active");
 });
 
