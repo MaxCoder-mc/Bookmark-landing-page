@@ -40,33 +40,24 @@ This project reinforced how small accessibility and logic tweaks can make a big 
 
 ```html
 <!-- Accessible FAQ structure -->
-
-            <button
-              class="faq-question"
-              aria-expanded="false"
-              aria-controls="answer1"
-              id="question1"
-            >
-              <span class="faq-title">What is Bookmark?</span>
-              <img
-                src="./images/icon-arrow.svg"
-                alt=""
-                class="arrow"
-                aria-hidden="true"
-              />
-            </button>
-            <div
-              id="answer1"
-              class="faq-answer"
-              role="region"
-              aria-labelledby="question1"
-              aria-hidden="true"
-            >
-              <p>
-                ...
-              </p>
-            </div>
-
+<button
+  class="faq-question"
+  aria-expanded="false"
+  aria-controls="answer1"
+  id="question1"
+>
+  <span class="faq-title">What is Bookmark?</span>
+  <img src="./images/icon-arrow.svg" alt="" class="arrow" aria-hidden="true" />
+</button>
+<div
+  id="answer1"
+  class="faq-answer"
+  role="region"
+  aria-labelledby="question1"
+  aria-hidden="true"
+>
+  <p>...</p>
+</div>
 ```
 
 ```js
