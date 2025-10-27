@@ -65,7 +65,7 @@ window.addEventListener("resize", handleResize, { passive: true });
 
 // ======= Tabs (ARIA + keyboard) =======
 const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
-const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+const panels = Array.from(document.querySelectorAll('[id^="panel-"]'));
 
 function activateTab(index, setFocus = true) {
   tabs.forEach((t, i) => {
