@@ -371,7 +371,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: -1px;
-  width: 200px;
+  width: 12.5rem;
   height: 0.25rem;
   background-color: var(--Red-400);
 }
@@ -451,7 +451,7 @@ body {
   will-change: transform;
 }
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-0.625rem);
 }
 .card-img-top {
   margin-block-end: var(--Card-Img_mbe);
@@ -546,7 +546,7 @@ body {
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
   margin: 0 auto;
 }
 .input-group {
