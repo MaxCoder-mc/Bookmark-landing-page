@@ -132,24 +132,44 @@
           role="tablist"
           aria-label="Feature tabs"
         >
-          <li
-            role="tab"
-            id="tab-1"
-            class="active"
-            aria-selected="true"
-            tabindex="0"
-          >
-            Simple Bookmarking
+          <li role="presentation">
+            <!-- role presentation since button handles tab role -->
+            <button
+              role="tab"
+              id="tab-1"
+              class="active"
+              aria-selected="true"
+              tabindex="0"
+              aria-controls="panel-1"
+            >
+              Simple Bookmarking
+            </button>
           </li>
-          <li role="tab" id="tab-2" aria-selected="false" tabindex="-1">
-            Speedy Searching
+          <li role="presentation">
+            <button
+              role="tab"
+              id="tab-2"
+              aria-selected="false"
+              tabindex="-1"
+              aria-controls="panel-2"
+            >
+              Speedy Searching
+            </button>
           </li>
-          <li role="tab" id="tab-3" aria-selected="false" tabindex="-1">
-            Easy Sharing
+          <li role="presentation">
+            <button
+              role="tab"
+              id="tab-3"
+              aria-selected="false"
+              tabindex="-1"
+              aria-controls="panel-3"
+            >
+              Easy Sharing
+            </button>
           </li>
         </ul>
 
-        <div class="tab-content" role="region">
+        <div class="tab-content">
           <article
             id="panel-1"
             aria-labelledby="tab-1"
@@ -284,6 +304,7 @@
         <ul class="faqs-list">
           <li class="faq-item">
             <button
+              type="button"
               class="faq-question"
               aria-expanded="false"
               aria-controls="answer1"
@@ -314,6 +335,7 @@
 
           <li class="faq-item">
             <button
+              type="button"
               class="faq-question"
               aria-expanded="false"
               aria-controls="answer2"
@@ -343,6 +365,7 @@
 
           <li class="faq-item">
             <button
+              type="button"
               class="faq-question"
               aria-expanded="false"
               aria-controls="answer3"
@@ -372,6 +395,7 @@
 
           <li class="faq-item">
             <button
+              type="button"
               class="faq-question"
               aria-expanded="false"
               aria-controls="answer4"
