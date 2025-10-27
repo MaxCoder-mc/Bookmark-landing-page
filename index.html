@@ -289,7 +289,7 @@
               aria-controls="answer1"
               id="question1"
             >
-              <h3>What is Bookmark?</h3>
+              <span class="faq-title">What is Bookmark?</span>
               <img
                 src="./images/icon-arrow.svg"
                 alt=""
@@ -319,7 +319,7 @@
               aria-controls="answer2"
               id="question2"
             >
-              <h3>How can I request a new browser?</h3>
+              <span class="faq-title">How can I request a new browser?</span>
               <img
                 src="./images/icon-arrow.svg"
                 alt=""
@@ -348,7 +348,7 @@
               aria-controls="answer3"
               id="question3"
             >
-              <h3>Is there a mobile app?</h3>
+              <span class="faq-title">Is there a mobile app?</span>
               <img
                 src="./images/icon-arrow.svg"
                 alt=""
@@ -377,7 +377,7 @@
               aria-controls="answer4"
               id="question4"
             >
-              <h3>What about other Chromium browsers?</h3>
+              <span class="faq-title">What about other Chromium browsers?</span>
               <img
                 src="./images/icon-arrow.svg"
                 alt=""
@@ -445,21 +445,19 @@
     </main>
 
     <footer class="footer">
-      <div class="container flex-col-row-md" style="align-items: center">
+      <div class="container flex-col-row-md">
         <a class="footer-logo" href="#" aria-label="Bookmark Home"
           ><img src="./images/logo-bookmark-light.svg" alt="Bookmark logo"
         /></a>
-        <ul
-          class="footer-nav flex-col-row-md"
-          role="navigation"
-          aria-label="Footer navigation"
-        >
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav flex-col-row-md">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
         <ul class="social-links">
           <li>
             <a class="nav-link" href="#" aria-label="Facebook"
