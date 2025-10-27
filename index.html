@@ -152,7 +152,6 @@
         <div class="tab-content" role="region">
           <article
             id="panel-1"
-            role="tabpanel"
             aria-labelledby="tab-1"
             class="flex-col-row-lg feature active"
           >
@@ -175,7 +174,6 @@
 
           <article
             id="panel-2"
-            role="tabpanel"
             aria-labelledby="tab-2"
             class="flex-col-row-lg feature"
           >
@@ -197,7 +195,6 @@
 
           <article
             id="panel-3"
-            role="tabpanel"
             aria-labelledby="tab-3"
             class="flex-col-row-lg feature"
           >
@@ -416,7 +413,7 @@
 
           <form id="ctaForm" class="cta-form flex-col-row-md" novalidate>
             <div id="inputGroup" class="input-group">
-              <label for="email" class="visually-hidden">Email address</label>
+              <label for="email" class="sr-only">Email address</label>
               <input
                 type="email"
                 name="email"
@@ -437,7 +434,6 @@
                 class="error-message"
                 role="status"
                 aria-live="polite"
-                aria-hidden="true"
               ></span>
             </div>
             <button type="submit" class="btn red-btn subscribe-btn">
