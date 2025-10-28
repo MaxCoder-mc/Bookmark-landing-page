@@ -189,12 +189,11 @@ body {
    Buttons
    -------------------------- */
 .btn {
-  font: var(--Preset-2-m);
+  font: var(--Preset-6-m);
   color: var(--White);
   background-color: var(--btn-Color);
   border: 2px solid transparent;
   border-radius: 0.3125rem;
-  padding: 0.5rem 0.8rem;
   box-shadow: 0 0.5rem 0.5rem var(--Blue-Shadow);
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
@@ -274,6 +273,11 @@ body {
   border: none;
   gap: 2.5rem;
 }
+.btn.login-btn {
+  font: var(--Preset-6-r);
+  text-transform: uppercase;
+  padding: 0.25rem 1.875rem;
+}
 
 .nav.nav-panel .red-btn {
   width: 100%;
@@ -326,6 +330,9 @@ body {
   align-items: center;
   gap: 1rem;
 }
+.hero-btn {
+  padding: 0.5rem clamp(0.90625rem, 0.3397rem + 2.4173vw, 1.5rem);
+}
 
 /* --------------------------
    Features / Tabs
@@ -347,17 +354,21 @@ body {
   margin-block-end: var(--Tab-List_mbe);
   display: flex;
   flex-direction: column;
+  border-block-start: 1px solid var(--Blue-Line);
+}
+.tab-list li {
+  width: 100%;
 }
 .tab-list button {
-  position: relative;
-  width: 100%;
   font: var(--Preset-2-r);
-  cursor: pointer;
-  padding-block: 1rem;
-  border-block-end: 1px solid var(--Blue-Line);
   color: var(--Blue-950);
+  padding-block: 1rem;
+  width: 100%;
+  border-block-end: 1px solid var(--Blue-Line);
+  cursor: pointer;
   opacity: 0.75;
   transition: color 0.3s;
+  position: relative;
 }
 .tab-list button:hover {
   color: var(--Red-400);
@@ -371,7 +382,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   bottom: -1px;
-  width: 12.5rem;
+  width: 10.187rem;
   height: 0.25rem;
   background-color: var(--Red-400);
 }
@@ -420,6 +431,10 @@ body {
   z-index: 1;
 }
 
+.info-btn {
+  padding: 0.5rem 1.5rem;
+}
+
 /* --------------------------
    Extensions / Cards
    -------------------------- */
@@ -465,6 +480,9 @@ body {
 }
 :is(.card-text, .faq-title) {
   font: var(--Preset-2-r);
+}
+.extension-btn {
+  padding: 0.5rem 2rem;
 }
 
 /* --------------------------
@@ -588,6 +606,10 @@ body {
   display: block;
 }
 
+.subscribe-btn {
+  padding: 0.5rem 1.5rem;
+}
+
 /* --------------------------
    Footer
    -------------------------- */
@@ -665,12 +687,21 @@ body {
   }
   .tab-list.flex-col-row-md {
     justify-content: space-around;
-    border-block-end: 1px solid var(--Blue-Line);
   }
+  .tab-list {
+    max-width: clamp(38rem, 24.4444rem + 28.2407vw, 45.625rem);
+    border-block-start: none;
+    border-block-end: 1px solid var(--Blue-Line);
+    margin-inline: auto;
+  }
+
   .tab-list button {
     font: var(--Preset-5-r);
     letter-spacing: 0.03125rem;
     border-block-end: none;
+  }
+  .tab-list button.active::after {
+    width: 100%;
   }
   .tab-content_img {
     align-self: flex-end;
@@ -681,6 +712,9 @@ body {
   .card-title {
     font: var(--Preset-3);
     letter-spacing: 0.01562rem;
+  }
+  .extension-btn {
+    padding: 0.187rem 0.5rem;
   }
 
   .faq-title {
@@ -765,6 +799,10 @@ body {
   .extentions-cards.flex-col-row-md .card:last-child {
     align-self: end;
   }
+  .extension-btn {
+    padding: 0.5rem 2rem;
+  }
+
   .footer .social-links {
     margin-inline-start: auto;
   }
